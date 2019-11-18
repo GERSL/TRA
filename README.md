@@ -17,7 +17,7 @@ More details about how to use this code are given in the [How to use.PDF](https:
 
 There are ***two functions for running TRA***: one is for a ***single pixel*** and the other is for the ***MGRS tile***.<br>
 
-(1) When running a single pixel, you need to define the ***path of L30 and S30 point*** data (CSV format) and the ***output path*** of fitted parameters (TXT format). As shown in Figure5, the CSV file should be organized as nine columns (***Year, DOY, Blue, Green, Red, NIR, SWIR1, SWIR2, and ClearFlag***). The ClearFlag labeled as 1 means the clear-sky observation.<br>
+(1) When running a single pixel, you need to define the ***path of L30 and S30 point*** data (CSV format) and the ***output path*** of fitted parameters (TXT format). The CSV file should be organized as nine columns (***Year, DOY, Blue, Green, Red, NIR, SWIR1, SWIR2, and ClearFlag***). The ClearFlag labeled as 1 means the clear-sky observation.<br>
 
 (2) When running a MGRS tile, you need to create the TXT file (Figure 6) for ***all paths of the HLS L30 or S30*** files (use the command: ***dir *S30*.hdf /s/b >pathS30.txt***), and then define the paths of two TXT files and the output path of the HDF file with the fitted parameters.<br> 
 
