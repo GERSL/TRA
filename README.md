@@ -19,10 +19,10 @@ There are ***two functions for running TRA***: one is for a ***single pixel*** a
 
 (1) When running a single pixel, you need to define the ***path of L30 and S30 point*** data (CSV format) and the ***output path*** of fitted parameters (TXT format). The CSV file should be organized as nine columns (***Year, DOY, Blue, Green, Red, NIR, SWIR1, SWIR2, and ClearFlag***). The ClearFlag labeled as 1 means the clear-sky observation.<br>
 
-(2) When running an MGRS tile, you need to create the TXT file for ***all paths of the HLS L30 or S30*** files (use the command: ***dir *S30*.hdf /s/b >pathS30.txt***), and then define the paths of two TXT files and the output path of the HDF file with the fitted parameters.<br> 
+(2) When running an MGRS tile, you need to create the TXT file for ***all paths of the HLS L30 or S30*** files (use the command: ***dir *S30*.hdf /s/b >pathS30.txt***), and then define the paths of two TXT files and the output path of the HDF file with the fitted parameters.<br> <br> 
 
 ## MATLAB verison
-This version currently can only run TRA for a single pixel. The script ***mainTRAtest*** shows an example of using the TRA functions (e.g. TRAmatch, TRAregression, TRAadjust). Notice that the remaining clouds removal in this version (***TimeSeiresNoiseFilter.m***) is different from that in Windows C/C++ version, which can provide better results.<br> <br> 
+This version currently can only run TRA for a single pixel. The script ***mainTRAtest*** shows an example of using the TRA functions (e.g. ***TRAmatch***, ***TRAregression***, ***TRAadjust***). Notice that the remaining clouds removal in this version (***TimeSeiresNoiseFilter***) is different from that in Windows C/C++ version, which can provide better results.<br> <br> 
 
 -------------
 If using this code, please cite the following paper:
