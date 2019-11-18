@@ -1,8 +1,9 @@
 function idclr = TimeSeiresNoiseFilter(clry,threshold)
 %% TimeSeiresNoiseFilter
-%    This function returns the index of clear-sky observations. Notice that
-% the first and last observations will be regarded as clear observations.
-% Developed by Rong Shang, 11/18/2019.
+%    This function is mainly used for removing the remaining clouds that was 
+% missed by the Sentinel-2 QA bands, and it returns the index of clear-sky 
+% observations. Notice that the first and last observations will be regarded
+% as clear-sky observations by default. Developed by Rong Shang, 11/18/2019.
 %
 % input: surface reflectance of six spectral bands
 % output: the index of clear-sky observations
